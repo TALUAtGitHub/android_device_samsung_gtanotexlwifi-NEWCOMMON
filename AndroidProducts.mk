@@ -13,8 +13,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-COMMON_LUNCH_CHOICES := \
-    lineage_gtanotexlwifi-userdebug
-
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_gtanotexlwifi.mk
