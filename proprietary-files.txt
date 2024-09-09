@@ -1,10 +1,6 @@
-# GPS - gpsd and gps.default.so from A810SKSS2CTI1, libwrappergps.so from P610XXS2EVJ2
-# Modifications made to gpsd to get it to run:
-#  * SSLv3_client_method has been replaced with SSLv23_method:
-#  $ sed -i "s/SSLv3_client_method/SSLv23_method\x00\x00\x00\x00\x00\x00/" gpsd
-#  * The android.hidl.base@1.0 dependency has been removed using patchelf:
-#  $ patchelf --remove-needed android.hidl.base@1.0.so gpsd
-# No modifications were made to gps.default.so and libwrappergps.so.
+# Files are from Samsung's A810SKSS2CTI1 firmware unless pinned
+
+# GPS - libwrappergps from P610XXS2EVJ2
 -vendor/bin/hw/gpsd
--vendor/lib64/libwrappergps.so
+-vendor/lib64/libwrappergps.so|63a053f354b356e3fca6adb9c35067995d0d1a3e
 -vendor/lib64/hw/gps.default.so
