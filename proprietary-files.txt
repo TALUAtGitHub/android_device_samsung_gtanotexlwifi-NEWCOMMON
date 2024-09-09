@@ -1,4 +1,4 @@
-# GPS - gpsd and gps.default.so from A810SKSS2CTI1, libwrappergps.so from P610XXU2DVA6
+# GPS - gpsd and gps.default.so from A810SKSS2CTI1, libwrappergps.so from P610XXS2EVJ2
 # Modifications made to gpsd to get it to run:
 #  * SSLv3_client_method has been replaced with SSLv23_method:
 #  $ sed -i "s/SSLv3_client_method/SSLv23_method\x00\x00\x00\x00\x00\x00/" gpsd
